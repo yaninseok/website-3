@@ -1,0 +1,152 @@
+/***************************************************
+* classic
+***************************************************/
+*{
+    box-sizing: border-box;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    background-color: #f396fa;
+}
+
+
+/***************************************************
+* header
+***************************************************/
+.container1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: 30px 5px;
+    background-attachment: fixed;
+    z-index: 1;
+}
+#gnav{
+    width: 100%;
+    background: #ce27c998;
+    position: absolute;
+    display: flex;
+    overflow-x: hidden;
+    z-index: 3;
+}
+.title {
+    position: relative;
+    z-index: 2; /* 배경 위에 표시 */
+    color: #fff53c;
+    text-align: center;
+    padding-top: 400px;
+    font-size: 30px;
+}
+#gnav ul {
+    /* ul의 전체적인 위치를 가로로 만드는 css*/
+    display: flex;
+    align-items: center;
+    list-style-type: none; /*ul태그의 점을 없애주는 문장*/
+}
+#gnav .page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#gnav a{
+    display: block;
+    
+}
+
+#gnav a:hover{
+    opacity: .8;
+}
+
+#gnav .page a {
+    height: 100%;
+    line-height: 100px; /*헤드부분이 잘 안보일때 이 문장을 px로 고쳐서 확인할것*/
+    color:  #fff53c;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 2em;
+}
+/***************************************************
+* main-total
+***************************************************/
+.container2{
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center;    /* 콘텐츠를 가운데 정렬 */
+    gap: 50px;              /* 요소 간 간격 추가 */
+    margin-top: 30px;
+    margin-bottom: 10% ;
+}
+.stin,.obs{
+    background-color: #ce27c998;
+    font-size: 45px;
+    text-align: center;
+    padding: 0 730px;
+    color: #f5ec3a;
+}
+.myth{
+    background-color: #ce27c998;
+    font-size: 45px;
+    text-align: center;
+    padding: 0 755px;
+    color: #f5ec3a;
+}
+/***************************************************
+* main-
+***************************************************/
+article{
+    max-width: 1000px;
+    margin-top: 10px;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .3);
+}
+h2{
+    margin-bottom: 1em;
+    border-left: 8px solid #212121;
+    border-bottom: 1px solid #212121;
+    padding: 0 0 .25em 1em;
+}
+article p{
+    margin-bottom: 1em;
+}
+ul{
+    list-style-type: none;
+    align-items: center;
+}
+article img{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+/***************************************************
+* footer
+***************************************************/
+#copyright{
+    color: #ffffff;
+    font-size: 12px;
+}
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a036e;
+}
